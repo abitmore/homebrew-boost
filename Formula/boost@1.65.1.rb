@@ -3,7 +3,7 @@ class BoostAT1651 < Formula
   homepage "https://www.boost.org/"
   url "https://dl.bintray.com/boostorg/release/1.65.1/source/boost_1_65_1.tar.bz2"
   sha256 "9807a5d16566c57fd74fb522764e0b134a8bbe6b6e8967b83afefd30dcd3be81"
-  revision 1
+  revision 2
   head "https://github.com/boostorg/boost.git"
 
   keg_only :versioned_formula
@@ -15,8 +15,6 @@ class BoostAT1651 < Formula
   deprecated_option "with-icu" => "with-icu4c"
 
   depends_on "icu4c" => :optional
-
-  needs :cxx11
 
   def install
     # Force boost to compile with the desired compiler
